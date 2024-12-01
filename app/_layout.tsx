@@ -4,12 +4,11 @@ import * as SplashScreen from "expo-splash-screen";
 import { StatusBar } from "expo-status-bar";
 import { useEffect } from "react";
 import "react-native-reanimated";
-import { useColorScheme } from "@/hooks/useColorScheme";
-
 import { MD3DarkTheme, MD3LightTheme, PaperProvider } from "react-native-paper";
 import { useMaterial3Theme } from "@pchmn/expo-material3-theme";
 
-// Prevent the splash screen from auto-hiding before asset loading is complete.
+import { useColorScheme } from "@/hooks/useColorScheme";
+
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
