@@ -1,50 +1,88 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# Simulador Compra em Dólar
 
-## Get started
+**Calcule facilmente o valor real de compras internacionais, considerando taxas bancárias e governamentais!**
 
-1. Install dependencies
+---
 
+## 📌 **Conceito**
+
+O **Simulador Compra em Dólar** é um aplicativo que permite calcular o custo total em reais de compras feitas em moeda estrangeira. Ele leva em conta não só a cotação do dólar, mas também as taxas bancárias e o IOF, proporcionando uma estimativa precisa do valor que aparecerá na fatura do cartão.
+
+---
+
+## 🎯 **Por que foi feito?**
+
+Fazer compras internacionais pode ser complicado devido às variações do câmbio e às taxas que só aparecem na hora da fatura. Este projeto foi desenvolvido para ajudar consumidores a planejar melhor suas compras, evitando surpresas desagradáveis e proporcionando maior controle financeiro.
+
+---
+
+## 🛠️ **Instalação**
+
+Siga estas etapas para configurar e executar o projeto localmente:
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/srgoogle23/simulador-compra-em-dolar.git
+   ```
+
+2. **Acesse o diretório do projeto:**
+   ```bash
+   cd simulador-compra-em-dolar
+   ```
+
+3. **Instale as dependências (se aplicável):**
    ```bash
    npm install
    ```
+   *(ou `yarn install` se você usa Yarn)*
 
-2. Start the app
-
+4. **Execute o projeto:**
    ```bash
-    npx expo start
+   npm start
    ```
+   *(ou `yarn start`)*
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🚀 **Como funciona?**
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+1. **Insira o valor da compra em dólares.**  
+2. **Adicione as taxas do seu banco ou cartão (caso não estejam predefinidas).**  
+3. **O simulador calcula automaticamente o valor em reais, incluindo:**
+   - Conversão baseada na cotação atual do dólar.  
+   - IOF (Imposto sobre Operações Financeiras).  
+   - Taxas adicionais do banco.  
 
-## Get a fresh project
+4. **Visualize o valor final estimado em reais.**  
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
-```
+## 🤝 **Contribuição**
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Contribuições são bem-vindas! Se você tem ideias para melhorias ou encontrou algum bug, siga os passos:
 
-## Learn more
+1. Faça um fork do projeto.
+2. Crie uma nova branch:
+   ```bash
+   git checkout -b minha-nova-feature
+   ```
+3. Commit suas alterações:
+   ```bash
+   git commit -m "Adiciona uma nova feature"
+   ```
+4. Envie para a branch principal:
+   ```bash
+   git push origin minha-nova-feature
+   ```
+5. Abra um Pull Request.
 
-To learn more about developing your project with Expo, look at the following resources:
+---
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 📄 **Licença**
 
-## Join the community
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para obter mais detalhes.
 
-Join our community of developers creating universal apps.
+---
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Feito com 💻 por [srgoogle23](https://github.com/srgoogle23).
