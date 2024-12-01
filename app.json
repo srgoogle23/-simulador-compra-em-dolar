@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "Simulador Compra em Dólar",
+    "slug": "simulador-compra-em-dolar",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.srgoogle23.simuladorcompraemdolar"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.srgoogle23.simuladorcompraemdolar"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5fd53dcf-4208-43c0-95f5-d21c47f07854"
+      }
+    },
+    "owner": "srgoogle23",
+    "updates": {
+      "url": "https://u.expo.dev/5fd53dcf-4208-43c0-95f5-d21c47f07854"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    }
+  }
+}
