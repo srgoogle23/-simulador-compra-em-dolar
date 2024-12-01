@@ -2,7 +2,7 @@
   "name": "simulador-compra-em-dolar",
   "license": "0BSD",
   "main": "expo-router/entry",
-  "version": "52.0.43",
+  "version": "0.0.1",
   "scripts": {
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",
@@ -57,5 +57,12 @@
     "jest-expo": "~52.0.2",
     "react-test-renderer": "18.3.1",
     "typescript": "^5.3.3"
+  },
+  "expo": {
+    "doctor": {
+      "reactNativeDirectoryCheck": {
+        "listUnknownPackages": false
+      }
+    }
   }
 }
