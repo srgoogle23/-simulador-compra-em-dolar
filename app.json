@@ -10,14 +10,14 @@
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.srgoogle23.simuladorcompraemdolar"
+      "bundleIdentifier": "com.indivery.simuladorcompraemdolar"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.srgoogle23.simuladorcompraemdolar"
+      "package": "com.indivery.simuladorcompraemdolar"
     },
     "web": {
       "bundler": "metro",
