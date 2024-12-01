@@ -1,33 +1,34 @@
-import { Image, StyleSheet, Platform } from "react-native";
-
+import { View, StyleSheet, Platform } from "react-native";
+import { useState } from "react";
 import ThemedScrollView from "@/components/ThemedScrollView";
-import { ThemedText } from "@/components/ThemedText";
-import { ThemedView } from "@/components/ThemedView";
+
+import { TextInput, Text } from "react-native-paper";
 
 export default function HomeScreen() {
+    const [text, setText] = useState<string>("");
+    const [tax, setTax] = useState<number>(0.0438);
+    const [spreed, setSpreed] = useState<number>(0.04);
+    const [total, setTotal] = useState<number>(0);
+
     return (
         <ThemedScrollView>
-            <ThemedView style={styles.titleContainer}>
-                <ThemedText type="title">Welcome!</ThemedText>
-            </ThemedView>
-            <ThemedView style={styles.stepContainer}>
-                <ThemedText type="subtitle">Step 1: Try it</ThemedText>
-                <ThemedText>
-                    Edit{" "}
-                    <ThemedText type="defaultSemiBold">
-                        app/(tabs)/index.tsx
-                    </ThemedText>{" "}
-                    to see changes. Press{" "}
-                    <ThemedText type="defaultSemiBold">
-                        {Platform.select({
-                            ios: "cmd + d",
-                            android: "cmd + m",
-                            web: "F12",
-                        })}
-                    </ThemedText>{" "}
-                    to open developer tools.
-                </ThemedText>
-            </ThemedView>
+            <View style={styles.titleContainer}>
+                <Text variant="titleLarge">Simulador de Compra em Dólar!</Text>
+            </View>
+            <View style={styles.stepContainer}>
+                <TextInput
+                    label="Valor da Compra"
+                    value={text}
+                    onChangeText={(text) => setText(text)}
+                />
+            </View>
+            <View style={styles.stepContainer}>
+                <Text>Spreed: {spreed * 100}%</Text>
+                <Text>Taxa de IOF: {tax * 100}%</Text>
+            </View>
+            <View style={styles.stepContainer}>
+                <Text>Total: {total}</Text>
+            </View>
         </ThemedScrollView>
     );
 }

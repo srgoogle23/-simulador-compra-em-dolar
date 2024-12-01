@@ -1,8 +1,6 @@
 import type { PropsWithChildren } from "react";
-import { StyleSheet } from "react-native";
+import { StyleSheet, View } from "react-native";
 import Animated, { useAnimatedRef } from "react-native-reanimated";
-
-import { ThemedView } from "@/components/ThemedView";
 import { useBottomTabOverflow } from "@/components/ui/TabBarBackground";
 
 type Props = PropsWithChildren<{}>;
@@ -12,16 +10,16 @@ export default function ThemedScrollView({ children }: Props) {
     const bottom = useBottomTabOverflow();
 
     return (
-        <ThemedView style={styles.container}>
+        <View style={styles.container}>
             <Animated.ScrollView
                 ref={scrollRef}
                 scrollEventThrottle={16}
                 scrollIndicatorInsets={{ bottom }}
                 contentContainerStyle={{ paddingBottom: bottom }}
             >
-                <ThemedView style={styles.content}>{children}</ThemedView>
+                <View style={styles.content}>{children}</View>
             </Animated.ScrollView>
-        </ThemedView>
+        </View>
     );
 }
 
